@@ -5,10 +5,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-        <link rel="icon" href="/static/favicon.png">
+        <link rel="icon" href="/learn_geekbang/static/favicon.png">
         <title>Linux性能优化.md.html</title>
         <!-- Spectre.css framework -->
-        <link rel="stylesheet" href="/static/index.css">
+        <link rel="stylesheet" href="/learn_geekbang/static/index.css">
         <!-- theme css & js -->
         <meta name="generator" content="Hexo 4.2.0">
     </head>
@@ -18,14 +18,14 @@
 <div class="book-container">
     <div class="book-sidebar">
         <div class="book-brand">
-            <a href="/">
+            <a href="/learn_geekbang/">
                 <img src="/static/favicon.png">
                 <span>技术文章摘抄</span>
             </a>
         </div>
         <div class="book-menu uncollapsible">
             <ul class="uncollapsible">
-                <li><a href="/" class="current-tab">首页</a></li>
+                <li><a href="/learn_geekbang/" class="current-tab">首页</a></li>
             </ul>
 
             <ul class="uncollapsible">
@@ -36,55 +36,55 @@
                 <li>
 
                     
-                    <a href="/极客时间/Java基础36讲.md.html">Java基础36讲.md.html</a>
+                    <a href="/learn_geekbang/极客时间/Java基础36讲.md.html">Java基础36讲.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/Java错误示例100讲.md.html">Java错误示例100讲.md.html</a>
+                    <a href="/learn_geekbang/极客时间/Java错误示例100讲.md.html">Java错误示例100讲.md.html</a>
 
                 </li>
                 <li>
 
-                    <a class="current-tab" href="/极客时间/Linux性能优化.md.html">Linux性能优化.md.html</a>
+                    <a class="current-tab" href="/learn_geekbang/极客时间/Linux性能优化.md.html">Linux性能优化.md.html</a>
                     
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/MySQL实战45讲.md.html">MySQL实战45讲.md.html</a>
+                    <a href="/learn_geekbang/极客时间/MySQL实战45讲.md.html">MySQL实战45讲.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/从0开始学微服务.md.html">从0开始学微服务.md.html</a>
+                    <a href="/learn_geekbang/极客时间/从0开始学微服务.md.html">从0开始学微服务.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/代码精进之路.md.html">代码精进之路.md.html</a>
+                    <a href="/learn_geekbang/极客时间/代码精进之路.md.html">代码精进之路.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/持续交付36讲.md.html">持续交付36讲.md.html</a>
+                    <a href="/learn_geekbang/极客时间/持续交付36讲.md.html">持续交付36讲.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/程序员进阶攻略.md.html">程序员进阶攻略.md.html</a>
+                    <a href="/learn_geekbang/极客时间/程序员进阶攻略.md.html">程序员进阶攻略.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/趣谈网络协议.md.html">趣谈网络协议.md.html</a>
+                    <a href="/learn_geekbang/极客时间/趣谈网络协议.md.html">趣谈网络协议.md.html</a>
 
                 </li>
             </ul>
@@ -2634,7 +2634,7 @@ strace: Process 4988 attached
 restart_syscall(&lt;\.\.\. resuming interrupted nanosleep \.\.\.&gt;) = 0
 openat(AT_FDCWD, &quot;/dev/sdb1&quot;, O_RDONLY|O_DIRECT) = 4
 mmap(NULL, 33558528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f448d240000
-read(4, &quot;8vq\213\314\264u\373\4\336K\224\<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1b292e5b">[email&#160;protected]</a>\371\1\252\2\262\252q\221\n0\30\225bD\252\<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a3919595e3e9">[email&#160;protected]</a>&quot;\.\.\., 33554432) = 33554432
+read(4, &quot;8vq\213\314\264u\373\4\336K\224\<a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1b292e5b">[email&#160;protected]</a>\371\1\252\2\262\252q\221\n0\30\225bD\252\<a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a3919595e3e9">[email&#160;protected]</a>&quot;\.\.\., 33554432) = 33554432
 write(1, &quot;Time used: 0.948897 s to read 33&quot;\.\.\., 45) = 45
 close(4)                                = 0
 </code></pre>
@@ -5722,7 +5722,7 @@ nameserver 114.114.114.114
 <p>首先，执行下面的命令，进入今天的第一个案例。如果一切正常，你将可以看到下面这个输出：</p>
 <pre><code># 进入案例环境的 SHELL 终端中
 $ docker run -it --rm -v $(mktemp):/etc/resolv.conf feisky/dnsutils bash
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="84f6ebebf0c4b3e1bde1e0b2e1e0b0bdb3b0">[email&#160;protected]</a>:/#
+<a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="84f6ebebf0c4b3e1bde1e0b2e1e0b0bdb3b0">[email&#160;protected]</a>:/#
 </code></pre>
 <p>注意，这儿 root 后面的 7e9ed6ed4974，是 Docker 生成容器的 ID 前缀，你的环境中很可能是不同的 ID，所以直接忽略这一项就可以了。</p>
 <blockquote>
@@ -5768,7 +5768,7 @@ Address: 39.106.233.176
 <h3>案例 2：DNS 解析不稳定</h3>
 <p>接下来，我们再来看第二个案例。执行下面的命令，启动一个新的容器，并进入它的终端中：</p>
 <pre><code>$ docker run -it --rm --cap-add=NET_ADMIN --dns 8.8.8.8 feisky/dnsutils bash
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa8895958ebaca999ec99f9fca99c29f9998">[email&#160;protected]</a>:/#
+<a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa8895958ebaca999ec99f9fca99c29f9998">[email&#160;protected]</a>:/#
 </code></pre>
 <p>然后，跟上一个案例一样，还是运行 nslookup 命令，解析 time.geekbang.org 的 IP 地址。不过，这次要加一个 time 命令，输出解析所用时间。如果一切正常，你可能会看到如下输出：</p>
 <pre><code>/# time nslookup time.geekbang.org
@@ -6158,10 +6158,10 @@ $ tcpdump -nn host 93.184.216.34 -w web.pcap
                     </div>
                     <div>
                         <div style="float: left">
-                            <a href="/极客时间/Java错误示例100讲.md.html">上一页</a>
+                            <a href="/learn_geekbang/极客时间/Java错误示例100讲.md.html">上一页</a>
                         </div>
                         <div style="float: right">
-                            <a href="/极客时间/MySQL实战45讲.md.html">下一页</a>
+                            <a href="/learn_geekbang/极客时间/MySQL实战45讲.md.html">下一页</a>
                         </div>
                     </div>
 

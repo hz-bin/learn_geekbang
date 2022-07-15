@@ -5,10 +5,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-        <link rel="icon" href="/static/favicon.png">
+        <link rel="icon" href="/learn_geekbang/static/favicon.png">
         <title>趣谈网络协议.md.html</title>
         <!-- Spectre.css framework -->
-        <link rel="stylesheet" href="/static/index.css">
+        <link rel="stylesheet" href="/learn_geekbang/static/index.css">
         <!-- theme css & js -->
         <meta name="generator" content="Hexo 4.2.0">
     </head>
@@ -18,14 +18,14 @@
 <div class="book-container">
     <div class="book-sidebar">
         <div class="book-brand">
-            <a href="/">
+            <a href="/learn_geekbang/">
                 <img src="/static/favicon.png">
                 <span>技术文章摘抄</span>
             </a>
         </div>
         <div class="book-menu uncollapsible">
             <ul class="uncollapsible">
-                <li><a href="/" class="current-tab">首页</a></li>
+                <li><a href="/learn_geekbang/" class="current-tab">首页</a></li>
             </ul>
 
             <ul class="uncollapsible">
@@ -36,54 +36,54 @@
                 <li>
 
                     
-                    <a href="/极客时间/Java基础36讲.md.html">Java基础36讲.md.html</a>
+                    <a href="/learn_geekbang/极客时间/Java基础36讲.md.html">Java基础36讲.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/Java错误示例100讲.md.html">Java错误示例100讲.md.html</a>
+                    <a href="/learn_geekbang/极客时间/Java错误示例100讲.md.html">Java错误示例100讲.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/Linux性能优化.md.html">Linux性能优化.md.html</a>
+                    <a href="/learn_geekbang/极客时间/Linux性能优化.md.html">Linux性能优化.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/MySQL实战45讲.md.html">MySQL实战45讲.md.html</a>
+                    <a href="/learn_geekbang/极客时间/MySQL实战45讲.md.html">MySQL实战45讲.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/从0开始学微服务.md.html">从0开始学微服务.md.html</a>
+                    <a href="/learn_geekbang/极客时间/从0开始学微服务.md.html">从0开始学微服务.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/代码精进之路.md.html">代码精进之路.md.html</a>
+                    <a href="/learn_geekbang/极客时间/代码精进之路.md.html">代码精进之路.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/持续交付36讲.md.html">持续交付36讲.md.html</a>
+                    <a href="/learn_geekbang/极客时间/持续交付36讲.md.html">持续交付36讲.md.html</a>
 
                 </li>
                 <li>
 
                     
-                    <a href="/极客时间/程序员进阶攻略.md.html">程序员进阶攻略.md.html</a>
+                    <a href="/learn_geekbang/极客时间/程序员进阶攻略.md.html">程序员进阶攻略.md.html</a>
 
                 </li>
                 <li>
 
-                    <a class="current-tab" href="/极客时间/趣谈网络协议.md.html">趣谈网络协议.md.html</a>
+                    <a class="current-tab" href="/learn_geekbang/极客时间/趣谈网络协议.md.html">趣谈网络协议.md.html</a>
                     
 
                 </li>
@@ -329,7 +329,7 @@ Content-Language: zh-CN
 <p>那你知道ifconfig和ip addr的区别吗？这是一个有关net-tools和iproute2的“历史”故事，你刚来到第三节，暂时不用了解这么细，但这也是一个常考的知识点。</p>
 <p>想象一下，你登录进入一个被裁剪过的非常小的Linux系统中，发现既没有ifconfig命令，也没有ip addr命令，你是不是感觉这个系统压根儿没法用？这个时候，你可以自行安装net-tools和iproute2这两个工具。当然，大多数时候这两个命令是系统自带的。</p>
 <p>安装好后，我们来运行一下ip addr。不出意外，应该会输出下面的内容。</p>
-<pre><code><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="88fae7e7fcc8fcedfbfc">[email&#160;protected]</a>:~# ip addr
+<pre><code><a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="88fae7e7fcc8fcedfbfc">[email&#160;protected]</a>:~# ip addr
 1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default 
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -2638,7 +2638,7 @@ ovs-vsctl set Interface tap0 ingress_policing_burst=10000
 <p>我们构建一个拓扑图，来看看OpenvSwitch的QoS是如何工作的。</p>
 <p>首先，在port上可以创建QoS规则，一个QoS规则可以有多个队列Queue。</p>
 <p><img src="assets/aafe1e0bfc6a87e3341b82485e41185b.jpg" alt="img" /></p>
-<pre><code>ovs-vsctl set port first_br <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bccdd3cf81fcd2d9cbcdd3cf">[email&#160;protected]</a> -- <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98b5b5f1fca5d8f6fdefe9f7eb">[email&#160;protected]</a> create qos type=linux-htb other-config:max-rate=10000000 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="49383c2c3c2c3a747974093879">[email&#160;protected]</a>,<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="77464a370646">[email&#160;protected]</a>,<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="70424d300142">[email&#160;protected]</a> -- <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2f0202464b126f5e1f">[email&#160;protected]</a> create queue other-config:min-rate=3000000 other-config:max-rate=10000000 -- <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="230e0e4a471e635212">[email&#160;protected]</a> create queue other-config:min-rate=1000000 other-config:max-rate=10000000 -- <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3a1717535e077a4b08">[email&#160;protected]</a> create queue other-config:min-rate=6000000 other-config:max-rate=10000000
+<pre><code>ovs-vsctl set port first_br <a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bccdd3cf81fcd2d9cbcdd3cf">[email&#160;protected]</a> -- <a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98b5b5f1fca5d8f6fdefe9f7eb">[email&#160;protected]</a> create qos type=linux-htb other-config:max-rate=10000000 <a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="49383c2c3c2c3a747974093879">[email&#160;protected]</a>,<a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="77464a370646">[email&#160;protected]</a>,<a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="70424d300142">[email&#160;protected]</a> -- <a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2f0202464b126f5e1f">[email&#160;protected]</a> create queue other-config:min-rate=3000000 other-config:max-rate=10000000 -- <a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="230e0e4a471e635212">[email&#160;protected]</a> create queue other-config:min-rate=1000000 other-config:max-rate=10000000 -- <a href="/learn_geekbang/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3a1717535e077a4b08">[email&#160;protected]</a> create queue other-config:min-rate=6000000 other-config:max-rate=10000000
 </code></pre>
 <p>上面的命令创建了一个QoS规则，对应三个Queue。min-rate就是上面的rate，max-rate就是上面的ceil。通过交换机的网络包，要通过流表规则，匹配后进入不同的队列。然后我们就可以添加流表规则Flow(first_br是br0上的port 5)。</p>
 <pre><code>ovs-ofctl add-flow br0 &quot;in_port=6 nw_src=192.168.100.100 actions=enqueue:5:0&quot;
@@ -3926,7 +3926,7 @@ Content-Length: nnn
                     </div>
                     <div>
                         <div style="float: left">
-                            <a href="/极客时间/程序员进阶攻略.md.html">上一页</a>
+                            <a href="/learn_geekbang/极客时间/程序员进阶攻略.md.html">上一页</a>
                         </div>
                         
                     </div>
